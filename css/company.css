@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+.company-table{
+    width: 100%;
+
+    th{
+        width: 10%;
+    }
+    td{
+        width: 90%;
+    }
+}
+
+.business-table{
+    width: 100%;
+    margin-bottom: 20px;
+
+    th{
+        width: 25%;
+    }
+    td{
+        width: 75%;
+    }
+}
+
+.acs-cont{
+    gap: 40px;
+}
+.acs-item1{
+    width: 40%;
+}
+.acs-item2{
+    width: 60%;
+}
+.map{
+    width: 100%;
+}
+.shopimg{
+    width: 100%;
+}

@@ -84,6 +84,44 @@ a:active{
     padding: 60px 30px;
 }
 
+/* テーブル */
+.model-table{
+    border-collapse: collapse;
+    border-spacing: 0;
+
+    th,
+    td{
+        border: 1px solid #999;
+        padding: 0.5em 1em;
+    }
+
+    th{
+        white-space: nowrap;
+        text-align-last: justify;
+    }
+
+    &.type-th-gray th{
+        background-color: #f4f4f4;
+    }
+
+    &.type-th-red th{
+        background-color: #ffcbcb;
+    }
+    &.type-th-blue th{
+        background-color: #cfe2ff;
+    }
+}
+
+/* .model-table.type-th-gray th{
+    background-color: #f4f4f4;
+}
+.model-table.type-th-red th{
+    background-color: #ffcbcb;
+}
+.model-table.type-th-blue th{
+    background-color: #cfe2ff;
+} */
+
 /* 背景色 */
 .att-bgcl-gray {
     background-color: #f4f4f4;
@@ -172,3 +210,33 @@ a:active{
     font-weight: 400;
     color: #009EE6;
 }
+
+/* 複数クラスが付与されたときのみ設定されるスタイル */
+/* クラス名の間にスペースは打たない。続けて打つこと */
+/* なぜならスペースを入れると子孫セレクターになる */
+/* つまり「.aaaの子供の.bbb」という扱いになってしまう */
+/* 今回は「.aaaと.bbbの両方のクラスが付いていたら」にしたい */
+/* .aaa.bbb{
+    color: #f00;
+} */
+
+/* これをネストで書く場合は注意 */
+/* 以下のように書くと、強制的に子孫セレクターになってしまう */
+/* .aaa{
+    .bbb{
+        color: #f00;
+    }
+} */
+
+/* &を使うと「連結」の働きになるため */
+/* 以下の記述は「.aaa.bbb{～}」と同じ意味になる */
+/* .aaa{
+    &.bbb{
+        color: #f00;
+    }
+} */
+/* ↑と↓は書き方が違うだけで意味は同じ */
+/* .aaa.bbb{
+    color: #f00;
+} */
+

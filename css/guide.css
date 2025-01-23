@@ -1,29 +1,40 @@
 @charset "utf-8";
 
-.mokuteki-list{
+.mokuteki-list {
     /* list-style-type: disc; */
     list-style-image: url(../image/common/listmark-square.png);
     padding-left: 2em;
 
-    li{
+    li {
         margin-top: 1em;
         margin-bottom: 1em;
     }
 }
 
-.process-list{
+.process-list {
     list-style-type: decimal;
     padding-left: 2em;
 
-    li{
+    li {
         margin-top: 1em;
         margin-bottom: 1em;
         font-weight: bold;
     }
 
-    li span:nth-child(2){
+    li span:nth-child(2) {
         display: block;
         font-weight: 300;
     }
 }
 
+.dl-list {
+    dt {
+        margin-top: 1em;
+    }
+
+    dd {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        padding-left: 2em;
+    }
+}
