@@ -229,8 +229,8 @@ input,
 optgroup,
 select,
 textarea {
-  -webkit-appearance: none; /* 1 */
-  appearance: none;
+  -webkit-appearance: auto; /* 1 */
+  appearance: auto;
   vertical-align: middle;
   color: inherit;
   font: inherit;
@@ -332,7 +332,7 @@ textarea {
  */
 
 [type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
+  -webkit-appearance: auto;
 }
 
 /**
