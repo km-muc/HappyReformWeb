@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+.works-cont {
+    gap: 40px;
+}
+
+.sidenav {
+    width: 20%;
+
+    p {
+        color: #009ee6;
+        font-weight: 300;
+    }
+
+    li {
+        border-bottom: 1px solid #009ee6;
+        padding: 0.5em;
+    }
+
+    a {
+        color: #009ee6;
+        padding: 0.5em;
+    }
+}
+
+.contents {
+    width: 80%;
+}
+
+.contents h2 {
+    margin-top: 0;
+}

@@ -28,6 +28,62 @@
     <p class="readtext">資料請求やご来店予約、その他お問い合わせは下記の内容をご確認の上ご送信ください。</p>
     <div class="model-inner">
       <h2>お問い合わせフォーム</h2>
+      <ul class="model-list type-disc">
+        <li>お客様からいただいたお問い合わせは順次対応させていただいております。休業日の関係やお問い合わせ内容によりましては、お返事までに日数がかかる場合もございますので予めご了承ください。</li>
+        <li>ご入力いただいたお客様の個人情報につきましては、弊社個人情報保護方針に則って取り扱わせていただきます。</li>
+      </ul>
+      <form class="contact-form model-form type-blue" action="chack.php" method="post">
+        <dl>
+          <div>
+            <dt><label for="name">お名前</label><em class="req">必須</em></dt>
+            <dd><input type="text" id="name" name="u-name" required></dd>
+          </div>
+          <div>
+            <dt><label for="residence">ご住所</label></dt>
+            <dd><input type="text" id="residence" name="u-residence"></dd>
+          </div>
+          <div>
+            <dt><label for="birth">生年月日</label></dt>
+            <dd><input type="text" id="birth" name="u-birth"></dd>
+          </div>
+          <div>
+            <dt><label>性別</label></dt>
+            <dd>
+              <input type="radio" id="noanswer" name="u-gender" value="未回答" checked><label for="noanswer">未回答</label>
+              <input type="radio" id="male" name="u-gender" value="男性"><label for="male">男性</label>
+              <input type="radio" id="female" name="u-gender" value="女性"><label for="female">女性</label>
+            </dd>
+          </div>
+          <div>
+            <dt><label for="tel">お電話番号</label><em class="req">必須</em></dt>
+            <dd><input type="tel" id="tel" name="u-tel" required></dd>
+          </div>
+          <div>
+            <dt><label for="mail">メールアドレス</label><em class="req">必須</em></dt>
+            <dd><input type="email" id="mail" name="u-mail" required></dd>
+          </div>
+          <div>
+            <dt><label for="genre">お問い合わせの種類</label></dt>
+            <dd>
+              <select id="genre" name="u-genre">
+                <option value="選択なし" selected>選択してください</option>
+                <option value="資料請求">資料請求</option>
+                <option value="来店予約">来店予約</option>
+                <option value="その他ご質問">その他ご質問</option>
+              </select>
+            </dd>
+          </div>
+          <div>
+            <dt><label for="comment">お問い合わせ内容</label></dt>
+            <dd><textarea name="u-comment" id="comment"></textarea></dd>
+          </div>
+        </dl>
+        <p class="personal-check">
+          <input type="checkbox" id="personal" name="u_personal" value="同意する">
+          <label for="personal">個人情報の取り扱いに同意する</label>
+        </p>
+        <input type="submit" value="確認画面へ">
+      </form>
     </div>
   </main>
   <footer class="main-footer">

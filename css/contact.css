@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+.contact-form {
+    dl>div {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 1em;
+    }
+  
+    dt {
+      width: 30%;
+    }
+  
+    dd {
+      width: 70%;
+    }
+  
+    .req{
+      float: right;
+    }
+  }
+  
+
+  

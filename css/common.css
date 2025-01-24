@@ -15,18 +15,21 @@ body {
     letter-spacing: 0.05em;
 }
 
-a:link{
+a:link {
     color: #161616;
     text-decoration: none;
 }
-a:visited{
+
+a:visited {
     color: #161616;
 }
-a:hover{
+
+a:hover {
     color: #009EE6;
     text-decoration: underline;
 }
-a:active{
+
+a:active {
     color: #E64800;
 }
 
@@ -85,30 +88,131 @@ a:active{
 }
 
 /* テーブル */
-.model-table{
+.model-table {
     border-collapse: collapse;
     border-spacing: 0;
 
     th,
-    td{
+    td {
         border: 1px solid #999;
         padding: 0.5em 1em;
     }
 
-    th{
+    th {
         white-space: nowrap;
         text-align-last: justify;
     }
 
-    &.type-th-gray th{
+    &.type-th-gray th {
         background-color: #f4f4f4;
     }
 
-    &.type-th-red th{
+    &.type-th-red th {
         background-color: #ffcbcb;
     }
-    &.type-th-blue th{
+
+    &.type-th-blue th {
         background-color: #cfe2ff;
+    }
+}
+
+
+.model-form {
+    font-size: 1.4rem;
+    text-align: left;
+
+    dl>div {
+        margin: 20px 0;
+    }
+
+    dd {
+        font-weight: normal;
+    }
+
+    input,
+    select,
+    textarea {
+        padding: 0.5rem;
+        color: #000;
+    }
+
+    input[type=text] {
+        width: 100%;
+    }
+
+    input[type=email] {
+        width: 100%;
+    }
+
+    input[type=tel] {
+        width: 100%;
+    }
+
+    input[type=radio] {
+        margin-left: 1.5em;
+        margin-right: 0.2em;
+        appearance: auto;
+    }
+
+    input[type=radio]:first-child {
+        margin-left: 0;
+    }
+
+    select {
+        appearance: auto;
+        width: 50%;
+        min-width: max-content;
+    }
+
+    textarea {
+        width: 100%;
+        height: 140px;
+    }
+
+    .personal-check {
+        text-align: center;
+        margin: 2em 0;
+    }
+
+    .personal-check input[type="checkbox"] {
+        width: auto;
+        margin-right: 0.5em;
+        vertical-align: -1px;
+        appearance: auto;
+    }
+
+    input[type="submit"] {
+        display: block;
+        padding: 0.5em 3em;
+        margin: 2em auto;
+        font-weight: bold;
+        letter-spacing: 0.05em;
+    }
+
+    .req {
+        margin-left: 1em;
+        border: 1px solid #a22000;
+        padding: 0 0.5rem;
+        font-size: 1rem;
+        color: #a22000;
+        font-style: normal;
+        font-weight: normal;
+    }
+
+    &.type-blue {
+
+        input,
+        select,
+        textarea {
+            background-color: #ebf9ff;
+            border: 1px solid #a6e3ff;
+        }
+
+        input[type="submit"] {
+            background-color: #009EE6;
+            border: 0;
+            color: #fff;
+        }
     }
 }
 
@@ -198,14 +302,15 @@ a:active{
 }
 
 /* サブページh2 */
-.sub h2{
+.sub h2 {
     font-size: 2.4rem;
     font-weight: 600;
     margin-top: 60px;
     margin-bottom: 14px;
 }
+
 /* サブページ .catch（トップページにおけるh1） */
-.catch{
+.catch {
     font-size: 1.6rem;
     font-weight: 400;
     color: #009EE6;
@@ -239,4 +344,3 @@ a:active{
 /* .aaa.bbb{
     color: #f00;
 } */
-
